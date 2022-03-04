@@ -8,11 +8,24 @@
           alt="app logo"
           width="200"
         />
-        <h1 class="h3 mb-3 font-weight-normal">Welcome back</h1>
+        <h1 class="h3 mb-3 font-weight-normal">
+          Create your SimbaWise account
+        </h1>
         <p class="lead">
-          Sign in with your email address to send virtual money in the
+          Sign up today and join others in sending virtual money in the
           currencies of (USD, EUR, NGN) to other users.
         </p>
+      </div>
+
+      <div class="form-label-group">
+        <input
+          id="inputUsername"
+          class="form-control"
+          placeholder="Username"
+          required
+          autofocus
+        />
+        <label for="inputEmail">Username</label>
       </div>
 
       <div class="form-label-group">
@@ -22,7 +35,6 @@
           class="form-control"
           placeholder="Email address"
           required
-          autofocus
         />
         <label for="inputEmail">Email address</label>
       </div>
@@ -39,15 +51,12 @@
       </div>
 
       <button class="btn btn-lg primary-btn btn-block" type="submit">
-        Sign in
+        Sign up
       </button>
       <p class="mt-5 mb-3 text-muted text-center">
-        New to SimbaWise?
-        <span
-          @click="$router.push({ name: 'register' })"
-          class="auth-toggle ml-1"
-        >
-          Sign up
+        Already have an account?
+        <span @click="$router.push({ name: 'login' })" class="auth-toggle ml-1">
+          Sign in
         </span>
       </p>
     </form>
